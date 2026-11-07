@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kautilya Vidyalaya, Mysuru - Done by BHUVAN R</title>
+    <style>
+        :root {
+            --primary-blue: #0F2C59;
+            --accent-gold: #C5A880;
+            --pure-white: #FFFFFF;
+            --off-white: #F8F9FA;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --border-color: #E2E8F0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--off-white);
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        /* Top Bar Credit */
+        .top-credit-bar {
+            background-color: #0A1D3A;
+            color: var(--accent-gold);
+            text-align: center;
+            padding: 10px 15px;
+            font-weight: bold;
+            font-size: 1.05rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--accent-gold);
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--primary-blue), #1E3E62);
+            color: var(--pure-white);
+            text-align: center;
+            padding: 80px 20px 60px 20px;
+            border-bottom: 6px solid var(--accent-gold);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        header .brand-tag {
+            background-color: var(--accent-gold);
+            color: var(--primary-blue);
+            padding: 8px 22px;
+            font-size: 1rem;
+            font-weight: 800;
+            border-radius: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 750px;
+            margin: 0 auto;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1150px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Overview Section */
+        .overview-box {
+            background-color: var(--pure-white);
+            border-left: 5px solid var(--primary-blue);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .overview-box h2 {
+            color: var(--primary-blue);
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .overview-box p {
+            color: var(--text-gray);
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+        }
+
+        /* Facility Cards Grid */
+        .facility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+        }
+
+        .facility-card {
+            background: var(--pure-white);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .facility-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(15, 44, 89, 0.12);
+        }
+
+        .facility-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .facility-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .facility-content h3 {
+            color: var(--primary-blue);
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            border-bottom: 2px solid var(--accent-gold);
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .facility-content p {
+            color: var(--text-gray);
+            font-size: 0.98rem;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-blue);
+            color: var(--pure-white);
+            text-align: center;
+            padding: 45px 20px;
+            margin-top: 60px;
+            border-top: 5px solid var(--accent-gold);
+        }
+
+        footer h3 {
+            color: var(--accent-gold);
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .creator-tag {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--pure-white);
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        .creator-tag span {
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Credit Banner (First Notice) -->
+    <div class="top-credit-bar">
+        Official School Showcase Website — Done by BHUVAN R
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <span class="brand-tag">Done by BHUVAN R</span>
+        <h1>Kautilya Vidyalaya, Mysuru</h1>
+        <p>Empowering young minds with value-based CBSE education, state-of-the-art facilities, and holistic growth.</p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Institution Overview -->
+        <div class="overview-box">
+            <h2>About the Institution</h2>
+            <p>Located in Kanakadasa Nagar, Dattagalli, Mysuru, <strong>Kautilya Vidyalaya</strong> is a premier CBSE-affiliated co-educational institution. Known for achieving academic excellence combined with top-tier athletic and creative infrastructure, the school provides an environment where students develop 21st-century skills, ethical grounding, and leadership.</p>
+            <p>From award-winning sustainability initiatives (Wipro Earthian Award) to advanced STEM and Atal Tinkering labs, Kautilya Vidyalaya stands as a beacon of modern progressive education in Mysuru.</p>
+        </div>
+
+        <!-- Facilities Grid -->
+        <div class="facility-grid">
+            
+            <!-- Campus Building -->
+            <div class="facility-card">
+                <img src="images/campus.jpg" alt="School Campus Architecture">
+                <div class="facility-content">
+                    <div>
+                        <h3>Main Campus & Architecture</h3>
+                        <p>Spanning a thoughtfully planned campus, Kautilya features spacious, well-ventilated classrooms, smart digital boards, a comprehensive library, and a safe, secure environment equipped with 24x7 CCTV monitoring.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swimming Pool -->
+            <div class="facility-card">
+                <img src="images/pool.jpg" alt="Swimming Pool Facility">
+                <div class="facility-content">
+                    <div>
+                        <h3>Professional Swimming Pool</h3>
+                        <p>The school features a well-maintained swimming pool that encourages aquatic sports and physical fitness. Swimming lessons are conducted under expert guidance with rigorous safety standards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- School Ground -->
+            <div class="facility-card">
+                <img src="images/ground.jpg" alt="Expansive School Playground">
+                <div class="facility-content">
+                    <div>
+                        <h3>Athletic Playground & Sports</h3>
+                        <p>Physical education is a core pillar at Kautilya. The expansive sports grounds accommodate football, cricket, basketball, track & field events, fostering teamwork, discipline, and competitive spirit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auditorium -->
+            <div class="facility-card">
+                <img src="images/auditorium.jpg" alt="Auditorium and Event Space">
+                <div class="facility-content">
+                    <div>
+                        <h3>Auditorium & Cultural Spaces</h3>
+                        <p>Equipped with modern acoustics and lighting, the indoor auditorium hosts vibrant cultural fests (like Saamskrithika Parva), debates, annual day productions, and guest lectures.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Science & Atal Tinkering Labs -->
+            <div class="facility-card">
+                <img src="images/lab.jpg" alt="Atal Tinkering and Science Labs">
+                <div class="facility-content">
+                    <div>
+                        <h3>Atal Tinkering & STEM Labs</h3>
+                        <p>A Niti Aayog approved Atal Tinkering Lab alongside dedicated Physics, Chemistry, and Biology laboratories where students engage in hands-on robotics, coding, and scientific research.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer Section (Last Notice) -->
+    <footer>
+        <h3>Kautilya Vidyalaya Showcase</h3>
+        <p class="creator-tag">Designed and Developed with Excellence — Done by <span>BHUVAN R</span></p>
+    </footer>
+
+</body>
+</html>
